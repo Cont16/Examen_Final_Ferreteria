@@ -1,0 +1,274 @@
+/*logo */
+.logo-imagen{
+background-image: url(../images/tornil.png);
+background-size: cover;
+}
+#logo {
+width: 300px;
+height: 300px;
+opacity: 0.7;
+margin-left: 600px;
+border-color: rgba(121, 120, 120);
+border-style: solid;
+border-radius: 20px;
+}
+
+/*fin logo */
+
+
+/*margenes pagina */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/*fin margenes pagina */
+
+
+/*video*/
+
+.video-background {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+z-index: -1; /* Asegura que el video esté detrás del contenido */
+}
+
+video {
+width: 100%;
+height: 100%;
+object-fit: cover; /* Cubre todo el fondo */
+}
+/*fin video*/
+
+/*barras de navegación y secciones*/
+.navbar {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #333;
+padding: 10px 20px;
+}
+
+#log-fac{
+width: 50px;
+height: 50px;
+border-radius: 20px;
+}
+
+#log-left{
+width: 200px;
+height: 50px;
+border-radius: 20px;
+margin-left: 10px;
+
+}
+
+#log-right{
+width: 50px;
+height: 50px;
+border-radius: 20px;
+}
+
+.nav-links{
+list-style: none;
+display: flex;
+margin: 0;
+padding: 0;
+}
+
+.nav-links li {
+margin-left: 20px;
+}
+
+.nav-links a {
+color: white;
+text-decoration:none;
+padding: 8px 16px;
+transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+background-color: #575757;
+border-radius: 4px;
+}
+
+section {
+padding: 50px;
+height: 800px;
+}
+
+section:nth-child(even) {
+background-color: #f4f4f4;
+
+}
+
+section:nth-child(odd) {
+background-color: #e2e2e2;
+}
+
+/*fin barras de navegación y secciones*/
+
+
+/*body*/
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+/*body*/
+
+/*acerca de */
+
+.flex-container {
+display: flex; /* Activa el modelo de caja flexible */
+justify-content: space-around; /* Espacio entre los elementos */
+align-items: center; /* Alinea los elementos verticalmente */
+padding: 30px;
+background-image: url(../images/fondo3.png);
+background-size:cover;
+background-position: center;
+background-repeat: no-repeat;
+border-radius: 40px;
+margin: 10px;
+}
+
+/*fin acerca de */
+
+.flex-item {
+display:block; /* Activa el modelo de caja flexible */
+justify-content:center; /* Espacio entre los elementos */
+align-items: center; /* Alinea los elementos verticalmente */
+padding: 50px;
+background-color: rgb(249, 243, 243, 0.60);
+border-radius: 50px;
+margin: 20px;
+color: black; /* Cambia el color del texto si es necesario */
+border-radius: 10%;
+border-color: black;
+border-style: solid;
+text-align:justify;
+text-shadow: rgb(247, 193, 142) 8px 8px 8px;
+font-size: 16px;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*porductos*/
+.productos {
+display: flex;
+width: 100%;
+height: 100%; 
+margin: 0;
+}
+
+.productos a {
+text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.productos img {
+width: 0px; /* Comienza con un ancho de 0 */
+flex-grow: 60; /* Permite que las imágenes crezcan */
+object-fit: cover; /* Ajusta la imagen para cubrir el área */
+opacity: 1; /* Opacidad inicial */
+transition: width 0.3s, opacity 0.3s; /* Transiciones suaves */
+}
+
+.productos img:hover {
+width: 300px; /* Aumenta el ancho al pasar el mouse */
+opacity: 1; /* Mantiene la opacidad al pasar el mouse */
+}
+
+/*fin productos*/
+
+/*contactanos*/
+
+.formular{
+width: 600px; /* Ancho del formulario */
+font-family: Arial, sans-serif;
+background-color: rgb(40, 40, 40); /* Fondo negro */
+color: #fff; /* Texto blanco */
+display: flex;
+justify-content: center;
+align-items: center;
+height: 600px; /* Altura completa de la ventana */
+margin: 0;
+border-radius: 20px;
+}
+h1 {
+text-align: center;
+margin-bottom: 20px;
+}
+label {
+margin-top: 10px;
+display: block; /* Hace que las etiquetas ocupen toda la línea */
+}
+input, textarea {
+width: 100%; /* Ancho completo */
+padding: 10px; /* Espaciado interno */
+margin-top: 5px; /* Espacio entre la etiqueta y el campo */
+border: 1px solid #76a1cf; /* Borde azul */
+border-radius: 4px; /* Bordes redondeados */
+background-color: #333; /* Fondo de los campos */
+color: #fff; /* Texto blanco */
+}
+input:focus, textarea:focus {
+border-color: #76a1cf; /* Cambia el color del borde al enfocar */
+outline: none; /* Elimina el contorno por defecto */
+}
+button {
+background-color: #007BFF; /* Color de fondo azul */
+color: #fff; /* Texto blanco */
+border: none; /* Sin borde */
+padding: 10px; /* Espaciado interno */
+border-radius: 4px; /* Bordes redondeados */
+cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+width: 100%; /* Ancho completo */
+margin-top: 10px; /* Espacio encima del botón */
+}
+button:hover {
+background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+                                                                                
+.icon-container {
+text-align: center; /* Centra el contenido */
+}
+
+.icon {
+display: inline-block; /* Permite aplicar márgenes */
+margin: 10px; /* Espacio entre íconos */
+transition: transform 0.6s; /* Transición suave para el efecto de hover */
+}
+
+.icon img {
+width: 100px; /* Ancho del ícono */
+height: 100px; /* Alto del ícono */
+}
+
+.icon:hover {
+transform: scale(0.4); /* Aumenta el tamaño al pasar el mouse */
+}
+
+.ubicacion{
+display: flex;
+}
+#vid-ubi{
+width: 620px;
+height: 596px;
+margin-left: 750px;
+margin-top: -726px;
+border-radius: 20px;
+border-color: black;
+border-style: solid;
+}
+.tit{
+background-color: #dcd9d9; /* Color de fondo */
+color: black; /* Color del texto */
+padding: 10px; /* Espaciado interno */
+text-align: center; /* Centra el texto */
+border-radius: 5px; /* Bordes redondeados (opcional) */
+}
